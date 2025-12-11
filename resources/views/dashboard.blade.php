@@ -40,6 +40,31 @@
                         </li>
                     </ul>
                 </div>
+                
+                <!-- Livewire Counter Demo -->
+                <div class="mt-6">
+                    <livewire:counter />
+                </div>
+
+                <!-- Alpine JS Demo -->
+                <div class="mt-6 bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold mb-4">Alpine JS Demo</h3>
+                    <div x-data="{ open: false, message: 'Hello from Alpine JS!' }">
+                        <button @click="open = !open" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition">
+                            Toggle Message
+                        </button>
+                        <div x-show="open" 
+                             x-transition:enter="transition ease-out duration-300"
+                             x-transition:enter-start="opacity-0 transform scale-90"
+                             x-transition:enter-end="opacity-100 transform scale-100"
+                             x-transition:leave="transition ease-in duration-300"
+                             x-transition:leave-start="opacity-100 transform scale-100"
+                             x-transition:leave-end="opacity-0 transform scale-90"
+                             class="mt-4 p-4 bg-blue-100 text-blue-800 rounded">
+                            <p x-text="message"></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
