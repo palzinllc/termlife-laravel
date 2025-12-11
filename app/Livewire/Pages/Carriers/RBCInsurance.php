@@ -14,7 +14,7 @@ class RBCInsurance extends Component
             description: 'Compare R B C Insurance term life insurance rates and features. Get transparent pricing on R B C Insurance policies.',
         );
 
-        return view('livewire.pages.carriers.rbc-insurance')
+        return view('livewire.pages.carriers.r-b-c-insurance')
             ->layout('layouts.front', ['SEOData' => $SEOData]);
     }
 }
