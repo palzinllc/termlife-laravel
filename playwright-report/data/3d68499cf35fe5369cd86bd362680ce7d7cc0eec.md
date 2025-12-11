@@ -1,0 +1,119 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - navigation [ref=e4]:
+    - generic [ref=e6]:
+      - link "CostPlus Life Insurance" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "CostPlus Life Insurance" [ref=e8]
+      - generic [ref=e9]:
+        - link "Home" [ref=e10] [cursor=pointer]:
+          - /url: /
+        - link "What is Term Life?" [ref=e11] [cursor=pointer]:
+          - /url: /what-is-term-life
+        - link "How to Choose?" [ref=e12] [cursor=pointer]:
+          - /url: /how-to-choose
+        - button "Who Needs This?" [ref=e14] [cursor=pointer]:
+          - text: Who Needs This?
+          - img [ref=e15]
+        - button "Get Your Quote" [ref=e17] [cursor=pointer]
+  - generic [ref=e19]:
+    - heading "Broker Disclosure" [level=1] [ref=e20]
+    - paragraph [ref=e21]: Owned & Operated by Immunis Financial Brokers Inc.
+    - generic [ref=e23]:
+      - paragraph [ref=e24]: CostPlus Life Insurance (operated by Immunis Financial Brokers Inc.) is contracted with leading Life Insurance Companies in Canada to provide you with comprehensive term life insurance options.
+      - paragraph [ref=e25]: CostPlus Life Insurance is licensed to conduct business across Canada, ensuring we can serve clients in multiple provinces and territories.
+      - heading "Business Operations" [level=2] [ref=e26]
+      - paragraph [ref=e27]: For insurance products, CostPlus Life Insurance processes insurance-related business through established Managing General Agents (MGAs), who will pay us, or direct the insurance company to pay us, a commission and/or bonus earned from the sale of insurance products that we place. This bonus constitutes a portion of the overall compensation we receive in conjunction with the commissions referenced below. We have full discretion to deal with any insurer with whom we trade, and we are not subject to pressure from any MGA to favor one insurer over another.
+      - heading "Continuing Education" [level=2] [ref=e28]
+      - paragraph [ref=e29]: To maintain our Life/Accident and Sickness License, our representatives are required to meet mandatory continuing education requirements. Our agents meet these educational requirements through attendance at various seminars and industry meetings, ensuring they remain current with industry best practices and regulations.
+      - heading "Compensation – Monetary and Non-Monetary" [level=2] [ref=e30]
+      - paragraph [ref=e31]: CostPlus Life Insurance receives compensation in the form of commissions from insurance companies for policies sold. Commission rates vary by insurance company and product type. We may also receive bonuses or other incentives based on sales volume or performance metrics.
+      - paragraph [ref=e32]: Non-monetary compensation may include educational materials, training opportunities, and attendance at industry conferences. All compensation received does not influence our commitment to recommending the best insurance solution for your specific needs.
+      - heading "Our Commitment" [level=2] [ref=e33]
+      - paragraph [ref=e34]: "Despite any compensation arrangements, our primary obligation is to you, our client. We are committed to:"
+      - list [ref=e35]:
+        - listitem [ref=e36]: Providing objective advice based on your individual circumstances
+        - listitem [ref=e37]: Comparing multiple insurance providers to find the best fit for your needs
+        - listitem [ref=e38]: Fully disclosing all material information about recommended products
+        - listitem [ref=e39]: Maintaining the highest standards of professional conduct
+        - listitem [ref=e40]: Prioritizing your interests above our own financial interests
+      - heading "Questions?" [level=2] [ref=e41]
+      - paragraph [ref=e42]: If you have any questions about our compensation structure, business relationships, or any other aspect of our operations, please don't hesitate to contact us. We believe in complete transparency and are happy to discuss any concerns you may have.
+  - contentinfo [ref=e43]:
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - generic [ref=e46]:
+          - img "CostPlus Life Insurance" [ref=e47]
+          - paragraph [ref=e48]: Helping Canadians find affordable term life insurance from top providers.
+          - paragraph [ref=e49]: Owned & Operated by Immunis Financial Brokers Inc.
+        - generic [ref=e50]:
+          - heading "Quick Links" [level=3] [ref=e51]
+          - list [ref=e52]:
+            - listitem [ref=e53]:
+              - link "What is Term Life?" [ref=e54] [cursor=pointer]:
+                - /url: /what-is-term-life
+            - listitem [ref=e55]:
+              - link "Who Needs This?" [ref=e56] [cursor=pointer]:
+                - /url: /who-needs-this
+            - listitem [ref=e57]:
+              - link "How to Choose?" [ref=e58] [cursor=pointer]:
+                - /url: /how-to-choose
+            - listitem [ref=e59]:
+              - link "Blog" [ref=e60] [cursor=pointer]:
+                - /url: /blog
+        - generic [ref=e61]:
+          - heading "Who Needs This?" [level=3] [ref=e62]
+          - list [ref=e63]:
+            - listitem [ref=e64]:
+              - link "Families" [ref=e65] [cursor=pointer]:
+                - /url: /use-cases/families
+            - listitem [ref=e66]:
+              - link "Singles & Young Pros" [ref=e67] [cursor=pointer]:
+                - /url: /use-cases/singles-young-pros
+            - listitem [ref=e68]:
+              - link "Homeowners" [ref=e69] [cursor=pointer]:
+                - /url: /use-cases/homeowners
+            - listitem [ref=e70]:
+              - link "Business Owners" [ref=e71] [cursor=pointer]:
+                - /url: /use-cases/business-owners
+            - listitem [ref=e72]:
+              - link "Dentists & Professionals" [ref=e73] [cursor=pointer]:
+                - /url: /use-cases/dentists-professionals
+        - generic [ref=e74]:
+          - heading "More Use Cases" [level=3] [ref=e75]
+          - list [ref=e76]:
+            - listitem [ref=e77]:
+              - link "Key People & Buy-Sell" [ref=e78] [cursor=pointer]:
+                - /url: /use-cases/key-people-buy-sell
+            - listitem [ref=e79]:
+              - link "Debt & Loans" [ref=e80] [cursor=pointer]:
+                - /url: /use-cases/debt-loans
+            - listitem [ref=e81]:
+              - link "Divorce & Child Support" [ref=e82] [cursor=pointer]:
+                - /url: /use-cases/divorce-child-support
+            - listitem [ref=e83]:
+              - link "Newcomers & Immigrants" [ref=e84] [cursor=pointer]:
+                - /url: /use-cases/newcomers-immigrants
+            - listitem [ref=e85]:
+              - link "Special-Needs Dependants" [ref=e86] [cursor=pointer]:
+                - /url: /use-cases/special-needs-dependants
+          - heading "Legal" [level=3] [ref=e87]
+          - list [ref=e88]:
+            - listitem [ref=e89]:
+              - link "Code of Conduct" [ref=e90] [cursor=pointer]:
+                - /url: /code-of-conduct
+            - listitem [ref=e91]:
+              - link "Disclosures" [ref=e92] [cursor=pointer]:
+                - /url: /disclosures
+            - listitem [ref=e93]:
+              - link "Privacy Policy" [ref=e94] [cursor=pointer]:
+                - /url: /privacy-policy
+            - listitem [ref=e95]:
+              - link "Terms of Service" [ref=e96] [cursor=pointer]:
+                - /url: /terms
+      - generic [ref=e97]:
+        - paragraph [ref=e98]: © 2025 CostPlus Life Insurance. All rights reserved.
+        - paragraph [ref=e99]: The information and content of this site is intended for general informational purposes only. It is not intended to constitute insurance, legal, financial, tax or any other professional advice or services. Insurance policy wordings are subject to change at any time, without prior notice. Please, read the Privacy Policy & Terms and Conditions for all legal restrictions.
+```
