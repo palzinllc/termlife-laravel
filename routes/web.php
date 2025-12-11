@@ -4,9 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\DashboardController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', App\Livewire\Pages\Home::class)->name('home');
 
 // Authentication Routes (Login only - Registration disabled)
 Route::middleware('guest')->group(function () {
