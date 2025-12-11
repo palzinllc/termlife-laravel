@@ -1,3 +1,173 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+
+    --primary: 174 68% 42%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 174 30% 96%;
+    --secondary-foreground: 174 68% 25%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 174 68% 42%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 174 68% 42%;
+
+    --radius: 0.75rem;
+
+  --heading-primary: 180 98% 24%;
+  --gradient-heading: linear-gradient(135deg, hsl(180 70% 25%), hsl(175 80% 40%), hsl(170 90% 55%));
+    
+    --gradient-primary: linear-gradient(135deg, hsl(174 68% 42%), hsl(174 68% 52%));
+    --gradient-hero: linear-gradient(135deg, hsl(174 68% 42% / 0.05), hsl(174 68% 42% / 0.02));
+    
+    --shadow-soft: 0 4px 20px -4px hsl(174 68% 42% / 0.1);
+    --shadow-glow: 0 0 40px hsl(174 68% 42% / 0.15);
+    --shadow-emboss: inset 0 1px 0 0 hsl(0 0% 100% / 0.7), inset 0 -1px 0 0 hsl(0 0% 0% / 0.05);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 174 68% 42%;
+  }
+
+  .dark {
+    --background: 0 0% 5%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 174 68% 42%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 174 20% 15%;
+    --secondary-foreground: 174 68% 70%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 174 68% 42%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 174 68% 42%;
+    
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 174 68% 42%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 174 68% 42%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes fadeUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-scroll {
+    animation: scroll 30s linear infinite;
+  }
+
+  .animate-scroll:hover {
+    animation-play-state: paused;
+  }
+
+  .animate-fade-up {
+    animation: fadeUp 0.8s ease-out forwards;
+  }
+
+  .hover-lift {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px -10px hsl(var(--primary) / 0.3);
+  }
+
+  .hover-glow {
+    transition: all 0.3s ease;
+  }
+
+  .hover-glow:hover {
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.4);
+  }
+
+  .text-emboss {
+    text-shadow: 0 1px 2px hsl(0 0% 0% / 0.15), 0 2px 4px hsl(var(--primary) / 0.1);
+  }
+
+  .heading-gradient {
+    background: linear-gradient(135deg, hsl(180 70% 25%), hsl(175 80% 40%), hsl(170 90% 55%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: none;
+    filter: drop-shadow(0 2px 4px hsl(180 70% 25% / 0.3));
+  }
+}
