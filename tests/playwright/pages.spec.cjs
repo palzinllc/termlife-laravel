@@ -134,19 +134,15 @@ test.describe('FAQ Accordion Functionality', () => {
     
     // Click to open
     await firstFaqButton.click();
-    await page.waitForTimeout(500); // Wait for transition
     
-    // Check that icon has rotated
-    const openClass = await chevronIcon.getAttribute('class');
-    expect(openClass).toContain('rotate-180');
+    // Wait for icon to have rotate-180 class
+    await expect(chevronIcon).toHaveClass(/rotate-180/);
     
     // Click to close
     await firstFaqButton.click();
-    await page.waitForTimeout(500); // Wait for transition
     
-    // Check that icon has rotated back
-    const closedClass = await chevronIcon.getAttribute('class');
-    expect(closedClass).not.toContain('rotate-180');
+    // Wait for icon to not have rotate-180 class anymore
+    await expect(chevronIcon).not.toHaveClass(/rotate-180/);
   });
   
   test('Multiple FAQ items can be opened independently', async ({ page }) => {
