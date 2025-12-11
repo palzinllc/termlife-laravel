@@ -17,7 +17,7 @@
 </head>
 <body class="font-sans antialiased">
     <div class="min-h-screen bg-background">
-        @yield('content')
+        {{ $slot }}
     </div>
 
     @livewireScripts
